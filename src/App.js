@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <h1>React Counter</h1>
+      <div aria-live="polite" role="status">
       <h2>Count: {count}</h2>
+      </div>
       <div className="controls">
         <button onClick={increment}>Increment</button>
         <button onClick={decrement}>Decrement</button>
