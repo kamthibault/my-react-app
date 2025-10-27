@@ -27,7 +27,8 @@ function App() {
           <input
           type="number"
           value={step}
-          onChange={e => setStep(Number(e.target.value))}
+          min="1"
+          onChange={e => setStep(matchMedia.max(1, Number(e.target.value)))}
           />
         </label>
       </div>
